@@ -1,4 +1,4 @@
-package com.sortingproject.sorting;
+package com.sortingproject.greenland;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

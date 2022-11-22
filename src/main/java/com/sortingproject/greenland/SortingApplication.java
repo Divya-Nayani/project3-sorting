@@ -1,4 +1,4 @@
-package com.sortingproject.sorting;
+package com.sortingproject.greenland;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -16,6 +16,8 @@
 	<description>Sorting project group2</description>
 	<properties>
 		<java.version>17</java.version>
+		<swagger.version>3.0.0</swagger.version>
+		<modelmapper.version>2.3.9</modelmapper.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -81,6 +83,11 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>${modelmapper.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -88,6 +95,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${project.parent.version}</version>
 				<configuration>
 					<excludes>
 						<exclude>

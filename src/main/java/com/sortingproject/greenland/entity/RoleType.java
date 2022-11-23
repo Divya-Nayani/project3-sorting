@@ -7,7 +7,7 @@ package com.sortingproject.greenland.entity;
  * @date: 22.11.2022
  */
 public enum RoleType {
-    ROLE_ADMIN("ROLE_ADMIN"),
+//    ROLE_ADMIN("ROLE_ADMIN"),
     ROLE_CUSTOMER("ROLE_CUSTOMER"),
     ROLE_PROVIDER("ROLE_PROVIDER");
 

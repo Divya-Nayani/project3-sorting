@@ -51,9 +51,9 @@ public class User implements Serializable {
      *
      * @return boolean
      */
-    public boolean isAdmin() {
-        return RoleType.ROLE_ADMIN.toString().equals(this.role.toString());
-    }
+//    public boolean isAdmin() {
+//        return RoleType.ROLE_ADMIN.toString().equals(this.role.toString());
+//    }
 
     /**
      * Method to convert an User entity to an User DTO
@@ -61,7 +61,7 @@ public class User implements Serializable {
      * @author: Oleksandr Pliuta
      * @date: 22.11.2022
      *
-     * @param user
+     * @param: user
      * @return an UserDTO object
      */
     public UserDTO convertEntityToDTO() {

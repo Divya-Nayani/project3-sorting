@@ -46,8 +46,8 @@ public class User implements Serializable {
     /**
      * Method that verifies if the user is admin
      *
-     * @author Mariana Azevedo
-     * @since 11/10/2020
+     * @author: Oleksandr Pliuta
+     * @date: 22.11.2022
      *
      * @return boolean
      */
@@ -58,8 +58,8 @@ public class User implements Serializable {
     /**
      * Method to convert an User entity to an User DTO
      *
-     * @author Mariana Azevedo
-     * @since 11/10/2020
+     * @author: Oleksandr Pliuta
+     * @date: 22.11.2022
      *
      * @param user
      * @return an UserDTO object

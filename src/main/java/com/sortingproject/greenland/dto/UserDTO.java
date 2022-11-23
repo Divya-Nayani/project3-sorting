@@ -1,6 +1,7 @@
 package com.sortingproject.greenland.dto;
 
 import com.sortingproject.greenland.entity.User;
+import com.sortingproject.greenland.util.BcryptUtil;
 import lombok.*;
 import org.hibernate.validator.constraints.Length;
 import org.modelmapper.ModelMapper;

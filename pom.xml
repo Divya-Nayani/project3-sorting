@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sortingproject</groupId>
-	<artifactId>sorting</artifactId>
+	<artifactId>GreenLand</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>sorting</name>

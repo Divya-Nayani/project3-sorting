@@ -24,9 +24,6 @@ public class Service {
     @ManyToOne
     @JoinColumn(name = "company_id")
     private List<Company> companies;
-    @ManyToOne
-    @JoinColumn(name = "recycle_id")
-    private Recycle recycles;
     @ManyToMany(mappedBy = "services")
     Set<User> userSet;
 

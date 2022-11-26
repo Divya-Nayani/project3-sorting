@@ -16,4 +16,7 @@ public class Recycle {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private double amount;
+    @ManyToOne
+    @JoinColumn(name = "service_id")
+    private Service service;
 }

@@ -10,9 +10,8 @@ import java.time.LocalDateTime;
 @SpringBootApplication
 public class SortingApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SortingApplication.class, args);
-		log.info("GreenLandAPI started successfully at {}", LocalDateTime.now());
-	}
-
+  public static void main(String[] args) {
+    SpringApplication.run(SortingApplication.class, args);
+    log.info("GreenLandAPI started successfully at {}", LocalDateTime.now());
+  }
 }

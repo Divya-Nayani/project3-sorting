@@ -1,5 +1,6 @@
 package com.sortingproject.greenland.entity.model;
 
+import com.sortingproject.greenland.entity.model.enums.RoleType;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -8,13 +9,12 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
@@ -23,15 +23,12 @@ import javax.validation.constraints.NotNull;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "answer")
-public class Answer {
+@Table(name = "service")
+public class Role {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @NotNull private String description;
-
-  @OneToOne
-  @JoinColumn(name = "question_id")
-  private Question question;
+  @Enumerated(EnumType.STRING)
+  private RoleType roleType;
 }

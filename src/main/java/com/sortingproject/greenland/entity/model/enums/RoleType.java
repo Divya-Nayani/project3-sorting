@@ -1,7 +1,7 @@
 package com.sortingproject.greenland.entity.model.enums;
 
-public enum Role {
+public enum RoleType {
 
-    COSTUMER, COMPANY
+    COSTUMER, PROVIDER
 
 }

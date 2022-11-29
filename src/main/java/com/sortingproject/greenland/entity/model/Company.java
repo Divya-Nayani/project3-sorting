@@ -15,7 +15,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
@@ -35,17 +34,20 @@ public class Company {
   @NotNull private String name;
   @NotNull private String phone;
   @NotNull private String description;
-  @NotNull @Email private String email;
 
   @OneToMany
-  @JoinColumn(name = "service_id")
-  private List<Service> services;
+  @JoinColumn(name = "collection_point_id")
+  private List<CollectionPoint> collectionPoints;
 
   @OneToMany
   @JoinColumn(name = "question_id")
   private List<Question> questions;
 
   @OneToOne
-  @JoinColumn(name = "user_id")
+  @JoinColumn(name = "users_id")
   private User user;
+
+  @OneToMany
+  @JoinColumn(name = "rate_id")
+  private List<Rate> rates;
 }

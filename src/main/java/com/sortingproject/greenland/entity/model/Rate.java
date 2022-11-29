@@ -27,5 +27,5 @@ public class Rate {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @NotNull private String name;
+  @NotNull private String ratingLevel;
 }

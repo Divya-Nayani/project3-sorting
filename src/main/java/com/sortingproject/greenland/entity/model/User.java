@@ -14,10 +14,12 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.List;
 import java.util.Set;
 
 @Getter
@@ -35,21 +37,13 @@ public class User {
 
   @NotNull private String firstName;
   @NotNull private String lastName;
-  @NotNull private int age;
-  @NotNull @Email private String email;
+  @Email private String email;
   private boolean isActive;
 
   @Size(min = 6)
   private String password;
 
-  @NotNull private String phone;
-
-  @ManyToMany
-  @JoinTable(
-      name = "user",
-      joinColumns = @JoinColumn(name = "user_id"),
-      inverseJoinColumns = @JoinColumn(name = "service_id"))
-  Set<Service> services;
+  private String phone;
 
   @ManyToMany
   @JoinTable(
@@ -57,4 +51,12 @@ public class User {
       joinColumns = @JoinColumn(name = "user_id"),
       inverseJoinColumns = @JoinColumn(name = "role_id"))
   Set<Role> roles;
+
+  @OneToMany
+  @JoinColumn(name = "question_id")
+  private List<Question> questions;
+
+  @OneToMany
+  @JoinColumn(name = "rate_id")
+  private List<Rate> rates;
 }

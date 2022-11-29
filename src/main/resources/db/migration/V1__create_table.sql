@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS sorting.user_role (
      role_id              BIGINT UNIQUE
 );
 
-CREATE TABLE IF NOT EXISTS sorting. (
+CREATE TABLE IF NOT EXISTS sorting.user_service (
      user_id              BIGINT UNIQUE,
      service_id           BIGINT UNIQUE
 );

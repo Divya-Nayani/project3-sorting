@@ -21,9 +21,9 @@ ALTER TABLE sorting.user_service
             ON DELETE CASCADE ON UPDATE RESTRICT;
 
 ALTER TABLE sorting.user_role
-    ADD CONSTRAINT user_service_user_fk
+    ADD CONSTRAINT user_role_user_fk
         FOREIGN KEY (user_id) REFERENCES sorting.user(id),
-    ADD CONSTRAINT user_service_role_fk
+    ADD CONSTRAINT user_role_role_fk
         FOREIGN KEY (role_id) REFERENCES sorting.role(id)
             ON DELETE CASCADE ON UPDATE RESTRICT;
 

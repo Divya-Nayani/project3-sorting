@@ -44,6 +44,8 @@ public class User {
   private String password;
 
   private String phone;
+  private String profilePicture;
+  private boolean notification;
 
   @ManyToMany
   @JoinTable(
